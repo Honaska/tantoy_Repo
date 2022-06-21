@@ -5,7 +5,7 @@ use App\Traits\Apiresponser;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\UserJob;
-use App\Http\Controllers\UserController;
+use DB;
 
 Class UserController extends Controller {
   use Apiresponser;
