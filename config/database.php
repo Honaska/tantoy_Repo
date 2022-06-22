@@ -17,8 +17,7 @@ database work. Of course
 using the Database library.
  |
  */
- 'default' => env('DB_CONNECTION', 
-'mysql'),
+ 'default' => env('DB_CONNECTION', 'mysql'),
  /*
  
 |--------------------------------------------
@@ -76,8 +75,7 @@ env('DB_TIMEZONE', '+00:00'),
  'testing' => [
  'driver' => 'sqlite',
  'database' => ':memory:',
- 'host' => 
-database_path('testing.sqlite'),
+ 'host' => database_path('testing.sqlite'),
  'prefix' => env('DB_PREFIX', ''),
  ],
  ],
