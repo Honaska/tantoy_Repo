@@ -54,8 +54,7 @@ public function add(Request $request ){
  $user->fill($request->all());
  // if no changes happen
  if ($user->isClean()) {
- return $this->errorResponse('At least one value must 
-change', Response::HTTP_UNPROCESSABLE_ENTITY);
+ return $this->errorResponse('At least one value must change', Response::HTTP_UNPROCESSABLE_ENTITY);
  }
  $user->save();
  return $this->successResponse($user);
