@@ -2,7 +2,7 @@
 
 namespace App\Exceptions;
 
-use App\Traits\ApiResponser;
+use App\Traits\Apiresponser;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
@@ -15,7 +15,7 @@ use Throwable;
 
 class Handler extends ExceptionHandler
 {
-    use ApiResponser;
+    use Apiresponser;
     /**
      * A list of the exception types that should not be reported.
      *
